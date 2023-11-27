@@ -32,7 +32,7 @@ class RegisterPage extends StatelessWidget {
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    'ชื่อ',
+                    '',
                     style: TextStyle(
                       color: Colors.grey[700],
                       fontSize: 16,
