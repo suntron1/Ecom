@@ -10,6 +10,10 @@ class RegisterPage extends StatelessWidget {
   Widget build(BuildContext context) {
     TextEditingController usernameController = TextEditingController();
     TextEditingController passwordController = TextEditingController();
+    TextEditingController LnaneController = TextEditingController();
+    TextEditingController EmailController = TextEditingController();
+    TextEditingController PhoneController = TextEditingController();
+    TextEditingController passwordcomfirmController = TextEditingController();
 
     void registerUser() {
       // Implement the registration functionality
@@ -28,112 +32,41 @@ class RegisterPage extends StatelessWidget {
                   Icons.person_add,
                   size: 100,
                 ),
-                const SizedBox(height: 50),
-                Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    '',
-                    style: TextStyle(
-                      color: Colors.grey[700],
-                      fontSize: 16,
-                    ),
-                  ),
-                ),
                 const SizedBox(height: 25),
                 MyTextField(
                   controller: usernameController,
                   hintText: 'ชื่อ',
                   obscureText: false,
                 ),
-                const SizedBox(height: 5),
-                const SizedBox(height: 25),
-                Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    'นามสกุล',
-                    style: TextStyle(
-                      color: Colors.grey[700],
-                      fontSize: 16,
-                    ),
-                  ),
-                ),
                 const SizedBox(height: 25),
                 MyTextField(
-                  controller: usernameController,
+                  controller: LnaneController,
                   hintText: 'นามสกุล',
                   obscureText: false,
                 ),
-                const SizedBox(height: 5),
-                const SizedBox(height: 25),
-                Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    'รหัสสมาชิก/อีเมล',
-                    style: TextStyle(
-                      color: Colors.grey[700],
-                      fontSize: 16,
-                    ),
-                  ),
-                ),
                 const SizedBox(height: 25),
                 MyTextField(
-                  controller: usernameController,
+                  controller: EmailController,
                   hintText: 'รหัสสมาชิก/อีเมล',
                   obscureText: false,
                 ),
-                const SizedBox(height: 5),
-                const SizedBox(height: 25),
-                Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    'เบอร์โทร',
-                    style: TextStyle(
-                      color: Colors.grey[700],
-                      fontSize: 16,
-                    ),
-                  ),
-                ),
                 const SizedBox(height: 25),
                 MyTextField(
-                  controller: usernameController,
+                  controller: PhoneController,
                   hintText: 'เบอร์โทร',
                   obscureText: false,
                 ),
-                const SizedBox(height: 5),
-                const SizedBox(height: 25),
-                Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    'รหัสผ่าน',
-                    style: TextStyle(
-                      color: Colors.grey[700],
-                      fontSize: 16,
-                    ),
-                  ),
-                ),
                 const SizedBox(height: 25),
                 MyTextField(
-                  controller: usernameController,
+                  controller: passwordController,
                   hintText: 'รหัสผ่าน',
-                  obscureText: false,
-                ),
-                const SizedBox(height: 5),
-                const SizedBox(height: 25),
-                Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    'ยืนยันรหัสผ่าน',
-                    style: TextStyle(
-                      color: Colors.grey[700],
-                      fontSize: 16,
-                    ),
-                  ),
+                  obscureText: true,
                 ),
                 const SizedBox(height: 25),
                 MyTextField(
-                  controller: usernameController,
-                  hintText: 'ยืนยัน',
-                  obscureText: false,
+                  controller: passwordcomfirmController,
+                  hintText: 'ยืนยันรหัสผ่าน',
+                  obscureText: true,
                 ),
                 const SizedBox(height: 5),
                 const SizedBox(height: 25),
